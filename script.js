@@ -18,7 +18,13 @@ function addTaskToList() {
             selectedTask = para;
         }
     })
+    para.addEventListener('mouseover', function () {
+        para.style.backgroundColor = '#f0f0f0';
+    });
 
+    para.addEventListener('mouseout', function () {
+        para.style.backgroundColor = '';
+    });
     para.addEventListener('dblclick', function () {
         const newTask = prompt("Edit your task:", para.innerText);
         if (newTask) {

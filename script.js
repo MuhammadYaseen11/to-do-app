@@ -26,10 +26,7 @@ function addTaskToList() {
             selectedTask = para;
         }
     })
-    // para.addEventListener('dblclick', function () {
-    //     taskList.removeChild(para);
-    // })
-    // Edit task on double-click (after removing the default double-click remove)
+
     para.addEventListener('dblclick', function () {
         const newTask = prompt("Edit your task:", para.innerText);
         if (newTask) {

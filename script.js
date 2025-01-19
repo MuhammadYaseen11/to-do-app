@@ -13,14 +13,6 @@ function addTaskToList() {
     taskInput.value = '';
 
     para.addEventListener('click', function () {
-        // if (selectedTask && selectedTask !== para) {
-        //     para.style.textDecoration = 'none';
-
-        // }
-        // if (selectedTask === para) {
-        //     para.style.textDecoration = 'none';     
-        //     selectedTask = para;
-        // } else 
         {
             para.style.textDecoration = 'line-through';
             selectedTask = para;

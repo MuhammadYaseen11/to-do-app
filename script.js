@@ -8,6 +8,7 @@ function addTaskToList() {
     if (taskInput.value.trim() === '') return;
     var para = document.createElement('p');
     para.innerText = taskInput.value;
+    para.inner
     taskList.appendChild(para);
     taskInput.value = '';
 

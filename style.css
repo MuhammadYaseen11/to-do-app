@@ -19,24 +19,37 @@ header {
     margin-top: 1em;
 }
 
+.input-text {
+    flex: 1;
+}
+
 #input {
     border: none;
     width: 100%;
     padding: 0.5em;
+    margin-left: 20px;
     font-size: 1em;
     border-radius: 5px;
 }
 
-#add-task {
-    padding: 0.5em 1em;
+.buttons {
+    display: flex;
+    gap: 0.5em;
+}
 
-    font-size: 1em;
+#add-task,
+#remove-task,
+#clear-all,
+#mark-all {
+    padding: 10px 1em;
+    margin-right: 20px;
+    font-size: 15px;
     background-color: white;
     color: #333;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
 }
-
 
 .task-container {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
@@ -51,15 +64,14 @@ header {
     gap: 1em;
     justify-items: center;
     justify-self: center;
-
 }
 
 .task-container p {
     margin: 0;
     color: white;
     font-size: large;
-
 }
+
 #list-task-container {
     margin-bottom: 80px;
 }
@@ -70,7 +82,7 @@ header {
     color: white;
     text-align: center;
     align-content: center;
-    position:fixed;
+    position: fixed;
     height: 2.5rem;
     bottom: 0;
     width: 100%;
